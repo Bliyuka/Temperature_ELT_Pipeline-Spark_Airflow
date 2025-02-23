@@ -19,25 +19,25 @@ This project automates the extraction, loading, and visualization of temperature
 - Matplotlib, Seaborn
 
 ## Project Structure
-Temperature_ELT_Pipeline-Spark_Airflow
---airflow/
-    --dags/
-        --temperature_pipeline.py # Airflow DAG
---data
-    --raw_source.txt # Kaggle URL for downloading
-    --simulated_raw_source/ # Data after simulation for pipeline event checking
---modules
-    --analysis_for_visualize
-        --spark_analysis.ipynb # Pre-analysis for visualizing
-    --fetch_and_visualize
-        --pyspark_load_visualize.py # Running modules
-        --pyspark_modules.py
-        # Modules for fetching and visualizing
-    -- monitor_and_loadMySQL
-        --python_modules.py # Monitor directory and load to MySQL
-    --simulate_data_source
-        --analysis_simulate.ipynb # Handle raw file in Kaggle to simulate event checking
---README.md
+Temperature_ELT_Pipeline-Spark_Airflow  
+├── airflow/  
+│   └── dags/  
+│       └── temperature_pipeline.py   # Airflow DAG  
+├── data/  
+│   ├── raw_source.txt                # Kaggle URL for downloading  
+│   └── simulated_raw_source/         # Data after simulation for pipeline event checking  
+├── modules/  
+│   ├── analysis_for_visualize/  
+│   │   └── spark_analysis.ipynb      # Pre-analysis for visualizing  
+│   ├── fetch_and_visualize/  
+│   │   ├── pyspark_load_visualize.py # Running modules  
+│   │   └── pyspark_modules.py        # Modules for fetching and visualizing  
+│   ├── monitor_and_loadMySQL/  
+│   │   └── python_modules.py         # Monitor directory and load to MySQL  
+│   └── simulate_data_source/  
+│       └── analysis_simulate.ipynb   # Handle raw file in Kaggle to simulate event checking  
+└── README.md  
+
 
 ## Visualization Output
 * Yearly Average Temperature by Region (Bar Chart)
