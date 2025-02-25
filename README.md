@@ -1,5 +1,5 @@
 lmao doc la cho
-lmao commit via terminal
+day la commit tu terminal
 
 # Temperature_ELT_Pipeline-Spark_Airflow
 
